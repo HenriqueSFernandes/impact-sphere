@@ -1,26 +1,44 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #ecd5e8;
+  --foreground: #55125b;
+  --primary-purple: #55125b;
+  --secondary-purple: #8e3189;
+  --accent-purple: #a05799;
+  --deep-purple: #3e2a8a;
+  --accent-blue: #4652a7;
+  --light-blue: #61a2df;
+  --text-blue: #708ade;
+  --surface: rgba(255, 255, 255, 0.5);
+  --card-pink: rgba(244, 219, 240, 0.94);
+  --card-purple: rgba(142, 49, 137, 0.3);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-primary: var(--primary-purple);
+  --color-secondary: var(--secondary-purple);
+  --color-accent: var(--accent-purple);
+  --color-deep-purple: var(--deep-purple);
+  --color-accent-blue: var(--accent-blue);
+  --color-light-blue: var(--light-blue);
+  --color-text-blue: var(--text-blue);
+  --color-card-pink: var(--card-pink);
+  --color-card-purple: var(--card-purple);
+  --font-display: var(--font-playfair);
+  --font-serif: var(--font-cormorant);
+  --font-sans: var(--font-poppins);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins), sans-serif;
+}
+
+.nav-glass {
+  background: rgba(97, 162, 223, 0.8);
+  backdrop-filter: blur(10px);
 }
