@@ -6,8 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "biome check",
-    "format": "biome format --write"
+    "format": "biome check --write",
+    "format:check": "biome check"
   },
   "dependencies": {
     "framer-motion": "^12.38.0",
